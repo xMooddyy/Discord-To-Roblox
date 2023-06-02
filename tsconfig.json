@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "moduleResolution": "Node",
+        "module": "CommonJS",
+        "target": "ES2020",
+        "lib": [
+          "ESNext",
+          "ESNext.Array",
+          "ESNext.AsyncIterable",
+          "ESNext.Intl",
+          "ESNext.Symbol",
+          "ESNext.BigInt"
+        ],
+        "declaration": false,
+        "sourceMap": false,
+        "removeComments": true,
+        "alwaysStrict": true,
+        "pretty": true,
+        "outDir": "./dist",
+        "incremental": false,
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+      "typeRoots": [
+        "./node_modules/@types",
+        "./typings"
+      ],
+      "baseUrl": "./src",
+      "paths": {
+        "@models/*": ["utils/models/*"],
+        "@utils/*": ["utils/*"]
+      }
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/locales/**/*.json",
+      "prisma/**/*",
+      "package.json",
+  ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
